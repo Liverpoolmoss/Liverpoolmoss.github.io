@@ -1,3 +1,11 @@
 RewriteEngine On
 RewriteBase /
 RewriteRule ^Liverpoolmoss.github.io/Index.html [NC,QSA,L]
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^Index.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /Index.html [L]
+</IfModule>
