@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^Liverpoolmoss.github.io/Index.html [NC,QSA,L]
